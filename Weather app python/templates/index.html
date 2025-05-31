@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 India Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>COVID-19 Tracker</h1>
+        <form method="POST">
+            <label for="state">Enter your state</label>
+            <input type="text" id="state" name="name" placeholder="e.g. Maharashtra, Kerala" required>
+            
+            <button type="submit">Fetch Now</button>
+
+            {% if data %}
+            <div class="results-container">
+                <div class="result-card">
+                    <h3>Active Cases</h3>
+                    <p class="active">{{ data.active }}</p>
+                </div>
+                
+                <div class="result-card">
+                    <h3>Cured Cases</h3>
+                    <p class="cured">{{ data.cured }}</p>
+                </div>
+                
+                <div class="result-card">
+                    <h3>Death Cases</h3>
+                    <p class="death">{{ data.death }}</p>
+                </div>
+            </div>
+            {% endif %}
+        </form>
+    </div>
+</body>
+</html>
