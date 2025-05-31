@@ -35,12 +35,16 @@ Open your browser and visit:
 http://localhost:5000
 Enter any Indian state name and click "Fetch Now" to view statistics
 
-Project Structure
+## Project Structure
 covid19-india-tracker/
-├── app.py               # Main Flask application
+├── app.py              
+
 ├── templates/
-│   └── index.html       # HTML template
-└── README.md            # This file
+
+│   └── index.html       
+
+└── README.md         
+
 Dependencies
 Python 3.x
 
@@ -77,5 +81,3 @@ MIT
    - Include a "Contributing" section
    - Add badges (for Python version, license, etc.)
 
-Would you like me to provide any of these additional files or modify the README further?
-New chat
