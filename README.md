@@ -11,7 +11,7 @@ A simple Flask web application that fetches and displays COVID-19 statistics for
   - Active cases
   - Cured/Recovered cases
   - Death cases
-- Simple and intuitive interface
+- Simple and intuitive interface 
 
 ## Installation
 
